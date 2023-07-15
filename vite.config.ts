@@ -12,8 +12,7 @@ export default defineConfig({
         minify: "esbuild",
         rollupOptions: {
             external: ["reading-time","unist-util-visit"]
-        },
-        watch: {}
+        }
     },
     plugins: [dts()]
 })

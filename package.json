@@ -1,0 +1,37 @@
+{
+  "name": "mdsvex-reading-time",
+  "description": "A remark plugin which calculates the reading time for your mdsvex markdown files.",
+  "version": "1.0.0",
+  "keywords": ["mdsvex","reading time","remark","plugins","svelte","sveltekit"],
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "author": {
+    "name": "Lucretius Biah",
+    "url": "https://lubiah.com"
+  },
+  "markdown": "github",
+  "main": "./dist/mdsvex-reading-time.umd.cjs",
+  "module": "./dist/mdsvex-reading-time.js",
+  "exports": {
+    ".": {
+      "import": "./dist/mdsvex-reading-time.js",
+      "require": "./dist/mdsvex-reading-time.cjs"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.2",
+    "vite": "^4.4.0"
+  },
+  "dependencies": {
+    "reading-time": "^1.5.0",
+    "unist-util-visit": "^5.0.0",
+    "vite-plugin-dts": "^3.3.0"
+  }
+}

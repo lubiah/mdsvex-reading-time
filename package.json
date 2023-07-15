@@ -3,6 +3,10 @@
   "description": "A remark plugin which calculates the reading time for your mdsvex markdown files.",
   "version": "1.0.0",
   "keywords": ["mdsvex","reading time","remark","plugins","svelte","sveltekit"],
+  "homepage": "https://github.com/lubiah/mdsvex-reading-time",
+  "bugs": {
+    "url": "https://github.com/lubiah/mdsvex-reading-time/issues"
+  },
   "type": "module",
   "files": [
     "dist"

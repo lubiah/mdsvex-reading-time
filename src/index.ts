@@ -16,10 +16,13 @@ const plugin = (options={})=>{
         let content = "";
         visit(tree, ['code','text'], (node)=>{
             content += node.value;
-        })
+        });
+
+        if (!file.data.fm) {
+            file.data.fm = {};
+        }
 
         file.data.fm[config.attribute] = readingTime(content, {wordsPerMinute : config.wpm});
-    
     }
 }
  
